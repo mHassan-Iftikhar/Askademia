@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Media Sans';
+    src: url('/src/fonts/MediaSans.woff2') format('woff2');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/src/fonts/SFProDisplay.woff2') format('woff2');
+    font-display: auto;
+}
+
+* {
+    font-family: 'SF Pro Display';
+}
+
+.font-media-sans {
+    font-family: 'Media Sans', sans-serif;
+}
+
+.font-sf-pro {
+    font-family: 'SF Pro Display', sans-serif;
+}
