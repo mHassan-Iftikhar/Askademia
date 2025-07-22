@@ -51,6 +51,19 @@ export default defineConfig({
   server: {
     hmr: {
       overlay: false
+    },
+    // Proxy API requests to backend
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/ws': {
+        target: 'ws://localhost:8080',
+        ws: true,
+        changeOrigin: true,
+      }
     }
   },
   // Enable CSS optimizations

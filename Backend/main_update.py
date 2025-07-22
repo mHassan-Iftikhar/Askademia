@@ -222,14 +222,18 @@ async def handle_client(websocket: WebSocketServerProtocol):
         active_connections.discard(websocket)
 
 async def main():
+    # Get configuration from environment variables
+    host = os.getenv('HOST', '0.0.0.0')
+    port = int(os.getenv('PORT', 8080))
+    
     server = await websockets.serve(
         handle_client,
-        "0.0.0.0",  # Listen on all interfaces
-        9084,
+        host,
+        port,
         ping_interval=20,  # Keep connection alive
         ping_timeout=20
     )
-    print("Server started on ws://localhost:9084")
+    print(f"Server started on ws://localhost:{port}")
     await asyncio.Future()  # run forever
 
 if __name__ == "__main__":

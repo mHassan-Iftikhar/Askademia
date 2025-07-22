@@ -9,7 +9,12 @@
     "build:analyze": "tsc && vite build --mode analyze",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "size-check": "npm run build && npx bundlesize"
+    "size-check": "npm run build && npx bundlesize",
+    "backend:install": "cd Backend && pip install -r requirements.txt",
+    "backend:start": "cd Backend && python3 start_servers.py",
+    "backend:setup": "cd Backend && cp .env.example .env && echo 'Please edit Backend/.env with your Google API key'",
+    "dev:full": "concurrently \"npm run backend:start\" \"npm run dev\"",
+    "setup": "npm install && npm run backend:install && npm run backend:setup"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
@@ -40,6 +45,7 @@
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
+    "concurrently": "^9.2.0",
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
