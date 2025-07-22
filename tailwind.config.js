@@ -8,4 +8,8 @@ export default {
     extend: {},
   },
   plugins: [],
+  // Optimize for production
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 } 

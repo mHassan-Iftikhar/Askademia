@@ -4,7 +4,7 @@ import {Button, Container, Header, SectionHeader, Footer, Specialties, Faqs, Emo
 // Fonts
 import { MediaSans } from '@/utils/fonts';
 // Icons
-import { ArrowRight, Mail, Send } from "lucide-react";
+import { ArrowRight, Mail, Send } from "@/utils/icons";
 
 // Mock data
 import { faqsData } from '@/mock';

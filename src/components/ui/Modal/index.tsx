@@ -3,7 +3,7 @@ import type { FC } from 'react';
 // Type definations
 // Type definations
 import type { ModalProps } from './index.d';
-import { ArrowLeft, X } from 'lucide-react';
+import { ArrowLeft, X } from '@/utils/icons';
 
 const Modal: FC<ModalProps> = ({
     children,
