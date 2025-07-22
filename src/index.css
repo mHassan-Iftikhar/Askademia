@@ -5,13 +5,15 @@
 @font-face {
     font-family: 'Media Sans';
     src: url('/src/fonts/MediaSans.woff2') format('woff2');
-    font-display: auto;
+    font-display: swap;
+    font-weight: 100 900;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     src: url('/src/fonts/SFProDisplay.woff2') format('woff2');
-    font-display: auto;
+    font-display: swap;
+    font-weight: 100 900;
 }
 
 * {

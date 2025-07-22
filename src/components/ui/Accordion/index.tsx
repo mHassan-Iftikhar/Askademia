@@ -9,7 +9,7 @@ import type { AccordionProps } from './index.d';
 import { MediaSans } from '@/utils/fonts';
 
 // Icons
-import { ArrowDown } from "lucide-react";
+import { ArrowDown } from "@/utils/icons";
 
 const Accordion: FC<AccordionProps> = ({
   title,

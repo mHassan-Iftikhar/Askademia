@@ -5,7 +5,7 @@ import type { PricingCardProps } from "./index.d";
 import { MediaSans } from "@/utils/fonts";
 
 // Icons
-import { Check } from "lucide-react";
+import { Check } from "@/utils/icons";
 
 const PricingCard: FC<PricingCardProps> = ({ title, description, price, hourlyRate, includes }) => {
   const textClassNames = "text-[16px] md:text-[20px] text-white leading-[140%]";

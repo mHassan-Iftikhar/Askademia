@@ -10,7 +10,7 @@ import { Button, Container } from '@/components';
 import { MediaSans } from '@/utils/fonts';
 
 // Icons
-import { ArrowRight, Menu, Notebook, X } from 'lucide-react';
+import { ArrowRight, Menu, Notebook, X } from '@/utils/icons';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
